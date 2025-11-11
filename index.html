@@ -163,7 +163,7 @@
     .reasoning-section p { margin: 0 0 8px; color: var(--text); font-size: 13.5px; }
     .reasoning-section ul { margin: 8px 0; padding-left: 20px; }
     .reasoning-section li { margin: 4px 0; font-size: 13.5px; color: var(--text); }
-    .reasoning-conclusion { background: #e9f2ff; border-left: 3px solid var(--primary); padding: 12px 14px; margin-top: 14px; border-radius: 6px; }
+    .reasoning-conclusion { background: #e9f2ff; border-left: 3px solid var(--primary); padding: 12px 14px; margin-top: 14px; border-radius: 6px; font-size: 14px; line-height: 1.65; color: var(--text); }
     .reasoning-conclusion strong { color: var(--primary); font-weight: 600; }
     .answer-label { display: inline-block; background: var(--primary-weak); color: var(--primary); padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 13px; }
 
@@ -1370,6 +1370,7 @@
           <button class="tab-btn" role="tab" aria-selected="true"  aria-controls="p-perception-3" id="t-perception-3">Speaker Trait Inference</button>
           <button class="tab-btn" role="tab" aria-selected="false" aria-controls="p-reason-3" id="t-reason-3">Philosophical & Affective Value Judgement</button>
           <button class="tab-btn" role="tab" aria-selected="false" aria-controls="p-emotion-3" id="t-emotion-3">Identity Inference & Social Reasoning</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="p-mbti-3" id="t-mbti-3">Predict MBTI</button>
 
           
         </div>
@@ -1676,6 +1677,122 @@
                   <p>综合来看，说话者展现出一种<strong>典型的"政策制定者"性格</strong>：<strong>外在冷静权威，内在严谨负责</strong>。他不是一个情绪化的人，而是以数据和逻辑驱动决策；同时，他有强烈的社会责任感，将政策与公共利益挂钩。这种性格在经济动荡时期至关重要——既能传递信心，又能体现决策的审慎性。</p>
                   
                   <p><strong>注意</strong>：性格分析基于音频片段的有限信息，可能受角色要求影响（例如，作为官方发言人，他需刻意保持专业形象）。在非正式场合，其真实性格可能更放松，但在此声明中，他完美地扮演了"稳定器"的角色。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="p-mbti-3" class="tab-panel" role="tabpanel" aria-labelledby="t-mbti-3">
+          <div class="sample-case">
+            <h3>Predict MBTI</h3>
+            <div class="audio-center" style="margin-bottom:12px">
+              <audio src="assets/MBTI_Curiosity_Cart.m4a" controls preload="none"></audio>
+            </div>
+            <div class="qa-wrap">
+              <div class="qa-box">
+                <h4>Question</h4>
+                <p>请分析并判断音频中说话人的MBTI</p>
+              </div>
+
+              <div class="reasoning-box">
+                <h4>Model Thinking Process</h4>
+
+                <div class="reasoning-section">
+                  <p>首先，用户要求我分析音频中说话人的MBTI（迈尔斯-布里格斯类型指标）。MBTI是一种性格分类系统，分为四个维度：外向（E） vs 向（I），感觉（S） vs 直觉（N），思考（T） vs 感（F），判断（J） vs 知（P）。每个维度有两个选项，组合成16种类型。</p>
+                  <p>我需要基于音频内容来推断说话人的MBTI。音频是文本形式的转录，所以我必须从对话中提取线索。</p>
+                  <p>音频内容：</p>
+                  <ul>
+                    <li>说话人1（女性）： "But not only that, I think be respectful of each other's boundaries and just know that it doesn't, what's okay for you is different than what's okay for me and everyone has their own things that they need."</li>
+                    <li>说话人2（男性）： "That's not all of that conversation."</li>
+                    <li>说话人1（女性）： "No, it's not, because we're not going to keep having it."</li>
+                  </ul>
+                  <p>关键点：</p>
+                  <ul>
+                    <li>说话人1在讨论尊重界限、个人差异和需求。她强调“what's okay for you is different than what's okay for me”，这表明她关注人际关系、同理心和个体差异。</li>
+                    <li>说话人2打断并说“That's not all of that conversation”，暗示对话不完整或有更多上下文。</li>
+                    <li>说话人1回应“No, it's not, because we're not going to keep having it”，显示她可能想结束对话或避免进一步争论。</li>
+                  </ul>
+                  <p>现在，分析说话人1的MBTI，因为她是主要说话者，提供了更多内容。</p>
+                  <p>从她的语言中推断：</p>
+                  <ol>
+                    <li><strong>外向（E） vs 向（I）</strong>：她似乎在表达个人观点（"I think"），但对话是互动的。她主动提出观点，可能偏向外向。然而，她谈论的是内在感受和界限，这可能更内向。需要更多线索。</li>
+                    <li><strong>感觉（S） vs 直觉（N）</strong>：感觉关注具体细节和现实，直觉关注抽象概念和可能性。她说“what's okay for you is different than what's okay for me”，这涉及抽象概念如个人界限和差异，可能偏向直觉。她没有提到具体事件，而是泛泛而谈。</li>
+                    <li><strong>思考（T） vs 感（F）</strong>：思考基于逻辑，情感基于价值观。她强调“respectful of each other's boundaries”和“everyone has their own things”，这显示对人际关系和情感的重视，可能偏向情感（F）。她使用“know that it doesn't”有点模糊，但整体语气是关怀的。</li>
+                    <li><strong>判断（J） vs 知（P）</strong>：判断偏好结构和计划，知觉偏好灵活性和开放性。她说“we're not going to keep having it”，表明她想结束对话，可能偏向判断（J），因为她在做决定。但对话本身是开放的，她可能更知觉。</li>
+                  </ol>
+                  <p>更深入分析：</p>
+                  <ul>
+                    <li>说话人1使用“I think”，表明她在表达个人信念。</li>
+                    <li>调尊重界限和个体差异：这常见于情感类型（F），因为他们重视和谐和同理心。</li>
+                    <li>说“what's okay for you is different than what's okay for me”：这显示她理解主观性，可能直觉（N），因为直觉类型更关注抽象和概念。</li>
+                    <li>应“No, it's not, because we're not going to keep having it”：这显示她果断，可能判断（J），但原因是为了避免重复争论，可能出于情感原因（不想继续争论）。</li>
+                  </ul>
+                  <p>可能的MBTI类型：</p>
+                  <ul>
+                    <li><strong>INFJ</strong>：内向、直觉、情感、判断。INFJ 以理想主义、同理心和对意义的追求著称。他们经常讨论人际关系和价值观。她谈论界限和差异，符合INFJ。</li>
+                    <li><strong>ENFJ</strong>：外向、直觉、情感、判断。ENFJ 是“倡导者”，关注他人福祉，善于沟通。她主动提出观点，可能外向。</li>
+                    <li><strong>INFP</strong>：内向、直觉、情感、知觉。INFP 重视个人价值观和和谐，但可能更知觉（P），避免冲突。</li>
+                    <li><strong>ENFP</strong>：外向、直觉、情感、知觉。ENFP 好奇、热情，但可能更灵活。</li>
+                  </ul>
+                  <p>从对话看：</p>
+                  <ul>
+                    <li>说话人1在解释一个概念，显示她有条理（可能J）。</li>
+                    <li>但她说“we're not going to keep having it”，表明她想结束，可能为了避免情感耗竭，这常见于情感类型。</li>
+                    <li>说话人2的打断可能让她感到压力，她迅速回应。</li>
+                  </ul>
+                  <p>另一个角度：MBTI 不能仅从少量对话确定，但基于常见模式。</p>
+                  <p>典型线索：</p>
+                  <ul>
+                    <li>感（F）：使用“尊重”、“界限”、“每个人的需求”，关注人际关系。</li>
+                    <li>直觉（N）：谈论抽象概念，如“what's okay for you”，而不是具体例子。</li>
+                    <li>向（I）：她分享个人想法，但对话是互动的；可能I，因为她深入思考。</li>
+                    <li>断（J）：她结束对话的意图，显示决策。</li>
+                  </ul>
+                  <p>说话人1说“everyone has their own things that they need”，这很模糊，但显示她考虑他人需求。</p>
+                  <p>在MBTI中，F类型更可能强调情感方面。</p>
+                  <p>比较INFJ和ENFJ：</p>
+                  <ul>
+                    <li>INFJ：更内省，可能更注重内在意义。</li>
+                    <li>ENFJ：更多外向，善于领导和激励。</li>
+                  </ul>
+                  <p>从音频，她似乎在对话中，但内容是反思性的，可能INFJ。</p>
+                  <p>说话人2说“That's not all of that conversation”，暗示对话有历史，说话人1可能想简化。</p>
+                  <p>最终，说话人1的回应“No, it's not, because we're not going to keep having it”显示她设置界限，这符合INFJ或INFP。</p>
+                  <p>但INFP可能更知觉（P），而她似乎在做决定（J）。</p>
+                  <p>常见MBTI误解：INFJ 有时被误认为INFP，但INFJ 更判断。</p>
+                  <p>分析说话人2：男性说“That's not all of that conversation”，可能表示他不同意或认为有更多内容。这可能显示他更关注事实或细节（S），但只有一句话，难判断。</p>
+                  <p>用户说“音频中说话人”，可能指主要说话者，即女性。</p>
+                  <p>在响应中，我应该提供推理。</p>
+                  <p>作为AI，我需要给出深思熟虑、条理清晰的回答，用自然语言。</p>
+                  <p>结构化响应：</p>
+                  <ol>
+                    <li>陈述主要情绪。</li>
+                    <li>解释语气。</li>
+                    <li>用音频内容支持。</li>
+                  </ol>
+                  <p>最终回答结构：</p>
+                  <ol>
+                    <li>介绍：解释MBTI和分析基础。</li>
+                    <li>分析说话人1的语言和行为。</li>
+                    <li>断可能类型，并解释原因。</li>
+                    <li>认局限性：仅基于短对话，不能确定。</li>
+                  </ol>
+                </div>
+
+                <div class="reasoning-conclusion">
+                  <p>基于你提供的音频片段，我来分析一下说话人的MBTI（迈尔斯-布里格斯类型指标）类型。MBTI是一种性格分类工具，通过四个维度（外向E vs 内向I、感觉S vs 直觉N、思考T vs 情感F、判断J vs 知觉P）将人分为16种类型。需要强调的是，仅凭这段简短的对话来确定MBTI类型存在局限性——真实性格需要更全面的观察，包括长期行为、价值观和更多互动场景。不过，我们可以从对话内容、语言风格和互动动态中提取线索，进行合理的推断。我会尽量保持客观，避免过度解读，同时用自然的方式解释我的思考过程。</p>
+                  <p>首先，聚焦主要说话人。音频中主要有两位说话人：一位女性（主导对话）和一位男性（简短插话）。由于女性说话人提供了更丰富的语言内容和情感线索，我的分析会以她为主。男性的角色较被动，只有一句插话，因此我主要关注女性说话人的表现。她的核心发言是：“But not only that, I think be respectful of each other's boundaries and just know that it doesn't, what's okay for you is different than what's okay for me and everyone has their own things that they need.” 以及后续回应：“No, it's not, because we're not going to keep having it.”</p>
+                  <p>分析关键线索，从对话中推断MBTI维度。MBTI的四个维度需要逐一拆解。我会结合她的用词、语气和行为逻辑来推理，避免主观臆断。记住，MBTI不是科学诊断，而是一种性格框架，重点在于“模式匹配”而非绝对正确。</p>
+                  <p>外向（E） vs 内向（I）：她主动提出观点（“I think...”），并试图解释一个抽象概念，这显示她乐于表达和分享想法，可能偏向外向（E）。但她的内容非常内省——聚焦于“界限”“个人需求”等内在感受，而不是外部事件或社交活动。她没有扩展话题或寻求更多互动，反而在结尾时果断结束对话（“we're not going to keep having it”），这更像是内向者（I）的典型行为：当能量耗尽时，会主动抽离以恢复精力。我的判断：更倾向内向（I）。理由是，她的表达虽主动，但核心是处理内在情感和原则，而非社交本身。</p>
+                  <p>感觉（S） vs 直觉（N）：她完全没提具体事件或细节，而是用高度抽象的语言讨论“what's okay for you is different than what's okay for me”。这指向直觉（N）——直觉型更关注模式、可能性和概念性意义，而不是现实细节。例如，“everyone has their own things that they need”这种泛化表述，是直觉型对“人类经验”的典型概括。我的判断：明显直觉（N）。</p>
+                  <p>思考（T） vs 情感（F）：她反复强调“尊重界限”“每个人的需求不同”，核心是维护人际关系和谐与同理心。用词如“respectful”“boundaries”“everyone has their own things”都透露出对他人感受的强烈关注，而非逻辑分析或客观评判。当男性插话时，她回应“No, it's not”时语气坚定但非攻击性，更像在保护情感边界。我的判断：明确情感（F）。</p>
+                  <p>判断（J） vs 知觉（P）：她试图给对话“下结论”（“know that it doesn't...”），并主动结束话题（“we're not going to keep having it”），显示她偏好结构和决策——判断型（J）喜欢 closure（了结感），避免悬而未决。我的判断：倾向判断（J）。理由是，她主动设定边界并推动对话结束，体现了J型的规划倾向——尤其当情感（F）和直觉（N）结合时，J型常表现为“用原则结束争论以维护关系”。</p>
+                  <p>综合推断：女性说话人的模式最符合INFJ（倡导者）类型。INFJ 的核心特征是理想主义、高度共情、重视深层意义和人际关系，但容易在社交中感到疲惫，因此会主动设置边界。他们常讨论抽象价值观，并用温和但坚定的方式结束消耗性对话——这和音频中她的表现高度一致。例如，她说“what's okay for you is different than what's okay for me”时，不是在指责，而是在表达一种普世信念，这正是INFJ的“倡导者”风格。</p>
+                  <p>为什么不是其他类型？ENFJ也符合情感（F）和直觉（N），但ENFJ更外向，会更热情地延续对话以“解决问题”，而不是像她这样果断结束。INFP同样情感（F）和直觉（N），但INFP更偏向知觉（P），会避免冲突或模糊表达，而她明确说“we're not going to keep having it”。INTJ则侧重逻辑（T），不会如此强调“尊重界限”。</p>
+                  <p>男性说话人只有一句插话（“That's not all of that conversation”），暗示他可能更关注事实或上下文，但样本太小，无法可靠判断。他的角色更像是“现实主义者”，与女性说话人的抽象风格形成对比——这也侧面强化了女性的直觉（N）特征。</p>
+                  <p>重要提醒：分析的局限性——这不是诊断，MBTI需要完整问卷和专业解读。这段对话太短，可能受情境影响。建议如果想更准确了解自己或他人，还是做正式测试，并结合长期观察。性格是光谱，不是标签。比如INFJ也可能有ENFJ的时刻。</p>
+                  <p>总之，基于这段音频，女性说话人展现出强烈的INFJ特质：一个温柔的理想主义者，用直觉和情感守护人际关系，同时在需要时果断设置边界。这让我想到，她可能在日常中是个很好的倾听者，但需要独处时间来“充电”。</p>
                 </div>
               </div>
             </div>
